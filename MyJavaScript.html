@@ -13,6 +13,10 @@
     <br>
     <h1>Hello</h1>
     <p id ="demo"></p>
+    <br>
+
+    <p id="FunctionOutput"></p>
+    <p id="AnotherFunctionOutput"></p>
 
     <script type="text/javascript">
         document.write("Hello world");
@@ -64,10 +68,22 @@
             x++;
         }
         document.getElementById("demo").innerHTML=text;
-        
+
+
+        /*
+        Function in java script
+
+        */
+        function add2Numbers(a,b){
+            return a+b;
+        }
+        var output = add2Numbers(4,3);
+        document.getElementById("FunctionOutput").innerHTML=output;
+        output = add2Numbers("Mani ","Ranganathan");
+        document.getElementById("AnotherFunctionOutput").innerHTML=output
             </script>
 <br>
 
 </body>
-<p id="WhileLoopOutput"></p>
+
 </html>
