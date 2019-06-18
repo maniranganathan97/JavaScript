@@ -25,18 +25,19 @@
 
     //the other way to create javascript object using the constructors
 
-    function Object(name,id){
+    function Object(name,id,array){
         this.name=name;
         this.id=id;
+        this.array=array;
         this.testFunction = function(){
             document.write("<h1>inside the object function</h1>");
         }
     }
-    var obj1= new Object("Mani",4028);
-    var obj2 =  new Object("Test2",7857);
+    var obj1= new Object("Mani",4028,[1,2,3]);
+    var obj2 =  new Object("Test2",7857,[4,5,6]);
     document.write("the below statment is using the function to print it");
     obj1.testFunction();
-    document.write("<h1>"+obj1.id+" "+obj1.name+"</h1>");
+    document.write("<h1>"+obj1.id+" "+obj1.name+" "+obj1.array[0]+"</h1>");
 
 
     </script>
