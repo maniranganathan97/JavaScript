@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> This is the Javascript using the objects</title>
+</head>
+
+<body>
+
+    <script text="text/javascript">
+/*
+
+// one of the way to create object in the java script , it is used to create the object only one time
+    var obj1={
+        name:"test1",
+        id:4028,
+        testFunction:function(){
+            document.write("<h1>inside the object function</h1>");
+        }
+    };
+    document.write(obj1.name+" "+obj1.id+" ");
+    obj1.testFunction();
+    */
+
+    //the other way to create javascript object using the constructors
+
+    function Object(name,id){
+        this.name=name;
+        this.id=id;
+        this.testFunction = function(){
+            document.write("<h1>inside the object function</h1>");
+        }
+    }
+    var obj1= new Object("Mani",4028);
+    var obj2 =  new Object("Test2",7857);
+    document.write("the below statment is using the function to print it");
+    obj1.testFunction();
+    document.write("<h1>"+obj1.id+" "+obj1.name+"</h1>");
+
+
+    </script>
+</body>
+
+</html>
