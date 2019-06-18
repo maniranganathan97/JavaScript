@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Text box example
+    </title>
+</head>
+
+<body>
+
+    <script text="text/javascript">
+
+        function myFunction(){
+            var userName = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+            if(userName=="admin" && pass=="admin"){
+                alert("Login Success!");
+            }
+            else{
+                alert("Sorry Invalid username or password!");
+            }
+        }
+    </script>
+</body>
+
+<input type="text" id ="uname" placeholder="User Name"></input>
+<br>
+<input type="password" id="pass" placeholder="Password"></input>
+<br>
+<button onclick="myFunction()">
+    Click
+</button>
+
+</html>
