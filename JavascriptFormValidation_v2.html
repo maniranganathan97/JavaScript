@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function valiadtion(){
+            var username= document.getElementById("user");
+            var pass = document.getElementById("pass");
+            if(username.value=="" ){
+              document.getElementById("user").style.border="3px solid red";
+              document.getElementById("labelUser").style.visibility="visible";
+                return false;
+
+            }
+            if(pass.value=="" ){
+              document.getElementById("pass").style.border="3px solid red";
+              document.getElementById("labelPass").style.visibility="visible";
+                return false;
+
+            }
+            
+            else{
+                return true;
+            }
+        }
+        </script>
+        <form onsubmit="return valiadtion()" action="welcome.html">
+            <input id="user" type="text" placeholder="Username"/>
+            <label id ="labelUser" style="color: red; visibility: hidden">Invalid</label><br>
+            <input id="pass" type="password" placeholder="Password"/>
+            <label id="labelPass" style="color: red; visibility: hidden">Invalid</label>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function valiadtion(){
+            var username= document.getElementById("user");
+            var pass = document.getElementById("pass");
+            if(username.value=="" || pass.value==""){
+                alert("Please provide your username and password");
+                return false;
+
+            }
+            else{
+                return true;
+            }
+        }
+        </script>
+        <form onsubmit="return valiadtion()" action="welcome.html">
+            <input id="user" type="text" placeholder="Username"/><br>
+            <input id="pass" type="password" placeholder="Password"/><br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
