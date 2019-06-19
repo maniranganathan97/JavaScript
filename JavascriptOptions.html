@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+
+
+    <head>
+        <title>javascript options</title>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+        function fun1(){
+            var select = document.getElementById("selectBox");
+            alert(select.options[select.selectedIndex].value);
+        }
+        
+        </script>
+    </body>
+    <body>
+        <select id ="selectBox">
+            <option value="Option 1">
+                option 1
+            </option>
+            <option value="Option 2">
+                option 2
+            </option>
+            <option value="Option 3">
+                option 3
+            </option>
+        </select>
+        <button id ="button1" onclick="fun1()">Try</button>
+    </body>
+</html>
