@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Regex Example</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        function validation(){
+            var username = document.getElementById("username").value;
+            var pattern =/F00/;
+            if(pattern.test(username)){
+                alert("username is in correct pattern");
+                return true;
+            }
+            else{
+                alert("Please enter correct username");
+                document.getElementById("userLabel").style.visibility="visible";
+                return false;
+            }
+        }
+        </script>
+        <form onsubmit="return validation()" action="welcome.html" >
+            <input type="text" id="username" placeholder="Username"/>
+            <label id ="userLabel" style="color: red ; visibility: hidden;">Invalid Username! Try again!</label><br>
+            <button type="submit" >Try</button>
+        </form>
+    </body>
+</html>
