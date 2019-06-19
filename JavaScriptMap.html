@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <title>Map Example</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    function fun1(){
+    var map = new Map();
+    map.set(1,"one");
+    map.set(2,"two");
+    map.set(3,"three");
+    for(var [key,value] of map){
+        document.write(key+" = "+value+"<br>");
+    }
+    }
+    fun1();
+    </script>
+</body>
+
+
+</html>
