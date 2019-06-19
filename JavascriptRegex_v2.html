@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Regex part 2
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        
+        function validation(){
+            var val = document.getElementById("regexTest").value;
+            var regex =/^[5-9]{1}[a-z]{8}0$/;
+            if(regex.test(val)){
+                document.getElementById("userLabel").innerHTML="Valid";
+                document.getElementById("userLabel").style.color="#00ff00";
+                document.getElementById("userLabel").style.visibility="visible";
+                return true;
+            }
+            else{
+                document.getElementById("userLabel").innerHTML="Invalid ";
+                document.getElementById("userLabel").style.color="#ff0000";
+                document.getElementById("userLabel").style.visibility="visible";
+                return false;
+            }
+
+        }
+        </script>
+         <form onsubmit="return validation()"  >
+                <input type="text" id="regexTest" placeholder="regexTest"/>
+                <label id ="userLabel" ></label><br>
+                <button type="submit" >Try</button>
+            </form>
+    </body>
+</html>
