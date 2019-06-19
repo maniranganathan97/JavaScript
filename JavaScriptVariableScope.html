@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+
+<title>
+    Variable Scope
+</title>
+
+<body>
+
+<script type="text/javascript">
+function addSquares(a,b){
+    function square(x){
+        return x*x;
+    }
+    return square(a)+square(b);
+}
+document.write(addSquares(2,3));
+
+</script>
+
+</body>
+
+</html>

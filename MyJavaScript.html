@@ -18,6 +18,10 @@
     <p id="FunctionOutput"></p>
     <p id="AnotherFunctionOutput"></p>
 
+
+    Scope Test Section:
+    <br><p id="scopeTest"></p>
+
     <script type="text/javascript">
         document.write("Hello world");
 
@@ -81,6 +85,14 @@
         document.getElementById("FunctionOutput").innerHTML=output;
         output = add2Numbers("Mani ","Ranganathan");
         document.getElementById("AnotherFunctionOutput").innerHTML=output
+        var scopeTestVar=20;
+        var scopeText="";
+        function scopeTest(){
+            var a=10;
+            scopeText+=" "+a+" "+scopeTestVar;
+        }
+        // text+=" "+a;
+        document.getElementById("scopeTest").innerHTML=scopeText;
             </script>
 <br>
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+    <title>
+        Regular expressions Example
+    </title>
+</head>
+
+
+   
+
+
+<body>
+        <script type="text/javascript">
+
+           function fun1(){
+
+               var val = document.getElementById("input1").value;
+               var pattern =/\d/g;
+               var result=pattern.test(val);
+               document.getElementById("result").innerHTML=result;
+           }
+           </script>
+
+    <h3>
+        This is the body section
+    </h3>
+    <input type="text" id="input1" placeholder="Enter only integers"></input>
+    <button id="regexTest" onclick="fun1()">Try </button>
+</body>
+<p id="result"></p>
+
+</html>
