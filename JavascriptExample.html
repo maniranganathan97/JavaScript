@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            This is the test page
+        </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+
+        function fun1(){
+            let obj={
+                name:"Mani",
+                age:22
+            };
+            for(key in obj){
+                document.write("The key is :"+key+"<br>");
+                document.write("The value from the object is : "+obj[key]+"<br>");
+            }
+        }
+        fun1();
+
+        function fun2(){
+            const obj = {
+                name:"Mani"
+            }
+            obj.age=22;
+            
+            document.write(obj.name+"<br>");
+            document.write(obj.age);
+        }
+        fun2();
+        </script>
+    </body>
+</html>

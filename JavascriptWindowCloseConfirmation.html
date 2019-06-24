@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        This is the window close confirmation popup message
+
+    </title>
+
+<body>
+    <script type="text/javascript">
+        function closeIt() {
+            if (confirm("Are you sure you want to close this window")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+
+<body onunload="return confirm('really quit?');">
+
+        I'm trying to make a routine that will confirm the user if he wants to close the pop up window.
+    </body>
+    </head>
+
+</html>

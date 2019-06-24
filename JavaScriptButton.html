@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            button event listener 
+        </title>
+    </head>
+    <body>
+            <button id ="b1">Try</button>
+            <p id="p1"></p>
+            <p id="p2">Click Me</p>
+    </body>
+    <body>
+            
+        <script >
+       document.getElementById("b1").addEventListener("click",function(){
+            document.getElementById("p1").innerHTML="Hello World!";
+        });
+        document.getElementById("p2").addEventListener("mouseover",mouseOver);
+        function mouseOver(){
+            alert("You mouse overing  the p2 Section");
+        }
+        document.getElementById("p2").addEventListener("mouseout",mouseOutEvent);
+        function mouseOutEvent(){
+            alert("You mouse out the p2 section");
+        }
+        </script>
+        
+    </body>
+</html>

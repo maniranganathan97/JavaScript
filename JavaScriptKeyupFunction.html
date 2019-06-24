@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Javascript keyup function
+        </title>
+        <body>
+            <script type="text/javascript">
+             function validate(){
+                 var inputData = document.getElementById("input1").value;
+                 if(inputData==""){
+                    document.getElementById("err").innerHTML="Please give input";
+                    document.getElementById("err").style.color="red";
+                    document.getElementById("err").style.visibility="visible";
+                 }
+                 else{
+                    document.getElementById("err").style.visibility="hidden";
+                 }
+             }
+             function fun1(){
+                 var data = document.getElementById("input1").value;
+                 if(data!=""){
+                 alert("You entered data is "+data);
+                 var platform = navigator.platform;
+                    document.getElementById("platform").innerHTML=platform;
+                 }
+                 else{
+                    document.getElementById("err").innerHTML="Please give input";
+                    document.getElementById("err").style.color="red";
+                    document.getElementById("err").style.visibility="visible";
+                 }
+             }
+             function finalValidate(){
+                var data = document.getElementById("input1").value;
+                if(data!=""){
+                    document.getElementById("result").innerHTML="Your input is correct and go ahead!"
+                   
+                }
+                else{
+                    document.getElementById("result").innerHTML="Sorry Give some input and try again!";
+                }
+             }
+             function autoRefresh(time){
+                 window.setTimeout("document.location.reload(true)",time);
+             }
+             autoRefresh(10000);
+             window.onunload = function() {
+   return 'Are you sure that you want to leave this page?';
+};
+                </script>
+                <h4><b>Note:</b>This page will refresh automatically every 10 seconds</h4>
+                <p>Enter name:</p><br>
+                <input type="text" id="input1" onkeyup="validate()"/><p id="err"></p>
+                <button id ="b1" onclick="fun1()">Click</button>
+                <p id="result"></p>
+                <p id="platform"></p>
+                            </body>
+    </head>
+</html>

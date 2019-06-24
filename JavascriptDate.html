@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Javascript Date
+    </title>
+</head>
+
+<body>
+    <p>This is sample paragraph</p>
+    <p id="demo"></p>
+    <script type="text/javascript">
+    var date = new Date(2019,0,1);
+    var date1=new Date(2019,1,1);
+    var date2 = new Date(2019,11,5);
+    document.write(date+"<br>");
+    document.write(date1+"<br>");
+    document.write(date2+"<br>");
+    class Article{
+        constructor(name , date){
+            this.name=name;
+            this.date=date;
+        }
+        static compare( a ,  b){
+            return a.date-b.date;
+        }
+    }
+    let articles=[new Article("Jave",new Date(2019,0,1)),
+     new Article("CSS",new Date(2018,5,4)),
+    new Article("HTML",new Date(2017,8,9))
+    ,new Article("New_Language ",new Date(2016,8,8))
+    ];
+    articles.sort(Article.compare);
+    document.write("The first element of the array is "+articles[0].name);
+    // document.getElementById("demo").innerHTML=date;
+    </script>
+    
+</body>
+
+</html>
